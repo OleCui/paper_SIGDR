@@ -52,7 +52,7 @@ The introduction of each <code> py </code> file is as follows:
 - <i>parse_args.py</i>: The parameter settings.
 
 ## How to Run the Code:
-Please firstly download the datasets and unzip the downloaded files. Next, create the <code>Datasets/</code> folder and move the unzipped datasets into this folder. The command to train GCGB on the B-dataset, C-dataset or F-dataset is as follows.
+Please firstly download the datasets and unzip the downloaded files. Next, create the <code>Datasets/</code> folder and move the unzipped datasets into this folder. The command to train SIGDR on the B-dataset, C-dataset or F-dataset is as follows.
 
 <ul>
 <li>B-dataset<pre><code>python main.py --dataset = B-dataset</code></pre>
