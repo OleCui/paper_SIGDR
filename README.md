@@ -39,3 +39,27 @@ These datasets can be downloaded from [google drive](https://drive.google.com/dr
 
 Above datasets utilized in this paper are consistent with the previous work [AMDGT: Attention aware multi-modal fusion using a dual graph transformer for drug–disease associations prediction. Knowledge-Based Systems, 2024, 284: 111329](https://github.com/JK-Liu7/AMDGT).
 
+
+## Code Files:
+The introduction of each <code> py </code> file is as follows:
+- <i>contrastive_learning.py</i>: The implementation of inter-view contrastive learning.
+- <i>data_preprocessing.py</i>: The implementation of data preprocessing.
+- <i>graph_transformer_layer.py</i>: The implementation of graph transformer layer.
+- <i>graph_transformer.py</i>: The implementation of basic graph transformer.
+- <i>metric.py</i>: The implementation of evaluation metrics.
+- <i>model.py</i>: The implementation of entire SIGDR model.
+- <i>main.py</i>: The implementation of model training.
+- <i>parse_args.py</i>: The parameter settings.
+
+## How to Run the Code:
+Please firstly download the datasets and unzip the downloaded files. Next, create the <code>Datasets/</code> folder and move the unzipped datasets into this folder. The command to train GCGB on the B-dataset, C-dataset or F-dataset is as follows.
+
+<ul>
+<li>B-dataset<pre><code>python main.py --dataset = B-dataset</code></pre>
+</li>
+<li>C-dataset<pre><code>python main.py --dataset = C-dataset</code></pre>
+</li>
+<li>F-dataset<pre><code>python main.py --dataset = F-dataset</code></pre>
+</li>
+</ul>
+</body></html>
