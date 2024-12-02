@@ -19,3 +19,23 @@ The codes of SIGDR are implemented and tested under the following development en
 -  networkx 3.1
 -  numpy 1.24.3
 -  scikit-learn 1.3.0
+
+## Datasets
+We verify the effectiveness of our proposed method on three commonly-used benchmarks, i.e., <i>B-dataset, C-dataset, </i>and <i>F-dataset</i>.
+| Dataset |  Drug |  Disease |  Drug-Disease| Sparsity |
+|:-------:|:-------:| :-------:| :-------:| :-------:|
+|B-dataset   | $269$ | $598$| $18416$ | $11.45\%$|
+|C-dataset   | $663$ | $409$| $2532$  | $0.93\%$|
+|F-dataset   | $592$ | $313$| $1933$  | $1.04\%$|
+
+These datasets can be downloaded from [google drive](https://drive.google.com/drive/folders/1w9orlSgM_HlwGwaVWPLYgRqbjdQc7RCv). Herein, we elaborate on the corresponding data files.
+- <i>DrugFingerprint.csv</i>: The drug fingerprint similarities between each drug pairs.
+- <i>DrugGIP.csv</i>: The drug Gaussian interaction profile (GIP) kernel similarities between each drug pairs.
+- <i>DiseasePS.csv</i>: The disease phenotype similarities between each disease pairs.
+- <i>DiseaseGIP.csv</i>: The disease GIP kernel similarities between each disease pairs.
+- <i> DrugDiseaseAssociationNumber.csv </i>: The known drug-disease associations.
+- <i> Drug_mol2vec.csv </i>: The 300-dimensional mol2vec embeddings of drugs, obtained from paper [Mol2vec: unsupervised machine learning approach with chemical intuition. Journal of chemical information and modeling, 2018, 58(1): 27-35](https://pubmed.ncbi.nlm.nih.gov/29268609/).
+- <i> DiseaseFeature.csv </i>: The 64-dimensional MeSH embeddings of diseases, obtained from paper [MeSHHeading2vec: a new method for representing MeSH headings as vectors based on graph embedding algorithm. Briefings in bioinformatics, 2021, 22(2): 2085-2095](https://academic.oup.com/bib/article/22/2/2085/5813844).
+
+Above datasets utilized in this paper are consistent with the previous work [AMDGT: Attention aware multi-modal fusion using a dual graph transformer for drug–disease associations prediction. Knowledge-Based Systems, 2024, 284: 111329](https://github.com/JK-Liu7/AMDGT).
+
