@@ -17,7 +17,7 @@ argparser.add_argument('--K_fold', type=int, default=10, help='k-fold cross vali
 
 argparser.add_argument('--negative_rate', type=float, default=1.0,help='negative_rate')
 
-argparser.add_argument('--KNN_neighbor', type=int, default=20, help='neighbor_num')
+argparser.add_argument('--KNN_neighbor', type=int, default=10, help='neighbor_num')
 
 argparser.add_argument('--total_epochs', type=int, default=1000,
                     help='adversarial learning epoch number.')
