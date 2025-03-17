@@ -170,7 +170,7 @@ def process_similarity_graph(d_data, args):
 
 def KNN_matrix(matrix, k, isBool = True, isSimilarity = True):
     num = matrix.shape[0]
-    knn_graph = np.zeros(matrix.shape, dtype=int)
+    knn_graph = np.zeros(matrix.shape, dtype=float)
 
     if isSimilarity:
         idx_sort = np.argsort(-(matrix - np.eye(num)), axis=1)
