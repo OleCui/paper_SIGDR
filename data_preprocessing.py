@@ -184,8 +184,8 @@ def KNN_matrix(matrix, k, isBool = True, isSimilarity = True):
         else:
             knn_graph[i, idx_sort[i, :k]] = matrix[i, idx_sort[i, :k]]
             knn_graph[idx_sort[i, :k], i] = matrix[idx_sort[i, :k], i]
-
-        knn_graph[i, i] = 1
+        if isSimilarity:
+            knn_graph[i, i] = 1
 
     return knn_graph
 
